@@ -75,9 +75,13 @@ namespace Snake
             pList.Add(p2);
             */
 
+            /* вызов конструктора без параметров
             HorizontalLine line = new HorizontalLine(); //создаем новую линию (объект: line)
-            line.Draw(); //выводим/рисуем эту самую линию
+            line.Draw(); //выводим/рисуем эту самую линию */
 
+            // вызов конструктора с параметрами
+            HorizontalLine line = new HorizontalLine(5, 10, 8, '+');
+            line.Draw();
 
             Console.ReadLine();
         }
